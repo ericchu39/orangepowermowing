@@ -1,192 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Orange Power Outdoors - Professional Lawn Care</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        orange: {
-                            '500': '#FF7F24',
-                            '600': '#E66A00',
-                            '700': '#CC5500'
-                        }
-                    }
-                }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orange Power Outdoors - Professional Lawn Care</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            orange: {
+              '500': '#FF7F24',
+              '600': '#E66A00',
+              '700': '#CC5500'
             }
+          }
         }
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-    <script src="https://unpkg.com/feather-icons"></script>
-    <script src="components/navbar.js"></script>
+      }
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 </head>
-<body class="bg-gray-50">
-    <custom-navbar></custom-navbar>
 
-    <main class="min-h-[calc(100vh-160px)]">
-        <!-- Hero Section -->
-        <section class="relative bg-orange-500 text-white">
-            <div class="container mx-auto px-4 py-24 md:py-32">
-                <div class="max-w-3xl mx-auto text-center">
-                    <h1 class="text-4xl md:text-5xl font-bold mb-6">Professional Lawn Care Services</h1>
-                    <p class="text-xl mb-8">Orange Power Outdoors delivers premium mowing and landscaping services with unmatched quality and reliability.</p>
-                    <div class="flex flex-col sm:flex-row justify-center gap-4">
-                        <a href="services.html" class="bg-white text-orange-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">Our Services</a>
-                        <a href="contact.html" class="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-orange-600 transition">Get a Quote</a>
-                    </div>
-                </div>
+<body class="bg-gray-50 font-sans">
+
+  <!-- Static Navigation Bar -->
+  <header class="bg-orange-700 text-white">
+    <div class="container mx-auto flex justify-between items-center px-6 py-4">
+      <h1 class="text-2xl font-bold">Orange Power Outdoors</h1>
+      <nav class="space-x-6">
+        <a href="index.html" class="hover:text-orange-200">Home</a>
+        <a href="about.html" class="hover:text-orange-200">About</a>
+        <a href="services.html" class="hover:text-orange-200">Services</a>
+        <a href="contact.html" class="hover:text-orange-200">Contact</a>
+        <a href="contact.html" class="bg-white text-orange-600 px-4 py-2 rounded-md font-semibold hover:bg-orange-100 transition">Get a Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="relative text-white bg-center bg-cover" 
+         style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/Assassin\'s\ Creed\ Odyssey.jpg');">
+        <div class="container mx-auto px-4 py-24 md:py-32 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">Professional Lawn Care Services</h2>
+            <p class="text-xl mb-8">Orange Power Outdoors delivers premium mowing and landscaping services with unmatched quality and reliability.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="services.html" class="bg-white text-orange-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">Our Services</a>
+                <a href="contact.html" class="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-orange-600 transition">Get a Quote</a>
             </div>
-            <div class="absolute bottom-0 left-0 right-0 h-16 bg-white"></div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Features Section -->
-        <section class="py-16 bg-white">
-            <div class="container mx-auto px-4">
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
-                        <div class="text-orange-500 mb-4">
-                            <i data-feather="clock" class="w-10 h-10"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-2">Reliable Service</h3>
-                        <p class="text-gray-600">Consistent, on-time service you can count on week after week.</p>
-                    </div>
-                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
-                        <div class="text-orange-500 mb-4">
-                            <i data-feather="star" class="w-10 h-10"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-2">Quality Results</h3>
-                        <p class="text-gray-600">Professional equipment and techniques for superior lawn care.</p>
-                    </div>
-                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
-                        <div class="text-orange-500 mb-4">
-                            <i data-feather="shield" class="w-10 h-10"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-2">Fully Insured</h3>
-                        <p class="text-gray-600">Peace of mind with our fully insured and bonded services.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- Gallery Preview -->
-        <section class="py-16 bg-gray-50">
-            <div class="container mx-auto px-4">
-                <h2 class="text-3xl font-bold text-center mb-12">Our Work</h2>
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-2">
-                    <div class="aspect-square overflow-hidden rounded-lg">
-                        <img src="http://static.photos/nature/640x360/1" alt="Lawn care" class="w-full h-full object-cover">
-                    </div>
-                    <div class="aspect-square overflow-hidden rounded-lg">
-                        <img src="http://static.photos/nature/640x360/2" alt="Mowing service" class="w-full h-full object-cover">
-                    </div>
-                    <div class="aspect-square overflow-hidden rounded-lg">
-                        <img src="http://static.photos/nature/640x360/3" alt="Landscaping" class="w-full h-full object-cover">
-                    </div>
-                    <div class="aspect-square overflow-hidden rounded-lg">
-                        <img src="http://static.photos/nature/640x360/4" alt="Yard work" class="w-full h-full object-cover">
-                    </div>
-                </div>
-                <div class="text-center mt-8">
-                    <a href="services.html" class="inline-flex items-center text-orange-600 font-semibold hover:text-orange-700">
-                        View all services
-                        <i data-feather="arrow-right" class="ml-2 w-5 h-5"></i>
-                    </a>
-                </div>
-            </div>
-        </section>
+    <!-- Features Section -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-gray-50 p-6 rounded-lg shadow-sm text-center">
+          <div class="text-orange-500 mb-4">
+            <i data-feather="clock" class="w-10 h-10"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Reliable Service</h3>
+          <p class="text-gray-600">Consistent, on-time service you can count on week after week.</p>
+        </div>
 
-        <!-- Testimonials -->
-        <section class="py-16 bg-white">
-            <div class="container mx-auto px-4">
-                <h2 class="text-3xl font-bold text-center mb-12">What Our Clients Say</h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="bg-orange-50 p-6 rounded-lg">
-                        <div class="flex items-center mb-4">
-                            <div class="text-orange-500 mr-2">
-                                <i data-feather="star" class="w-5 h-5 fill-current"></i>
-                            </div>
-                            <div class="text-orange-500">
-                                <i data-feather="star" class="w-5 h-5 fill-current"></i>
-                            </div>
-                            <div class="text-orange-500">
-                                <i data-feather="star" class="w-5 h-5 fill-current"></i>
-                            </div>
-                            <div class="text-orange-500">
-                                <i data-feather="star" class="w-5 h-5 fill-current"></i>
-                            </div>
-                            <div class="text-orange-500">
-                                <i data-feather="star" class="w-5 h-5 fill-current"></i>
-                            </div>
-                        </div>
-                        <p class="text-gray-700 mb-4">"Orange Power Outdoors transformed my overgrown yard into a beautiful lawn. Their attention to detail is unmatched!"</p>
-                        <p class="font-semibold">- xxxxx.</p>
-                    </div>
-                    <div class="bg-orange-50 p-6 rounded-lg">
-                        <div class="flex items-center mb-4">
-                            <div class="text-orange-500 mr-2">
-                                <i data-feather="star" class="w-5 h-5 fill-current"></i>
-                            </div>
-                            <div class="text-orange-500">
-                                <i data-feather="star" class="w-5 h-5 fill-current"></i>
-                            </div>
-                            <div class="text-orange-500">
-                                <i data-feather="star" class="w-5 h-5 fill-current"></i>
-                            </div>
-                            <div class="text-orange-500">
-                                <i data-feather="star" class="w-5 h-5 fill-current"></i>
-                            </div>
-                            <div class="text-orange-500">
-                                <i data-feather="star" class="w-5 h-5 fill-current"></i>
-                            </div>
-                        </div>
-                        <p class="text-gray-700 mb-4">"Consistently great service. They show up on time and do an excellent job every week."</p>
-                        <p class="font-semibold">- xxxxxx.</p>
-                    </div>
-                    <div class="bg-orange-50 p-6 rounded-lg">
-                        <div class="flex items-center mb-4">
-                            <div class="text-orange-500 mr-2">
-                                <i data-feather="star" class="w-5 h-5 fill-current"></i>
-                            </div>
-                            <div class="text-orange-500">
-                                <i data-feather="star" class="w-5 h-5 fill-current"></i>
-                            </div>
-                            <div class="text-orange-500">
-                                <i data-feather="star" class="w-5 h-5 fill-current"></i>
-                            </div>
-                            <div class="text-orange-500">
-                                <i data-feather="star" class="w-5 h-5 fill-current"></i>
-                            </div>
-                            <div class="text-orange-500">
-                                <i data-feather="star" class="w-5 h-5 fill-current"></i>
-                            </div>
-                        </div>
-                        <p class="text-gray-700 mb-4">"The best lawn care company in town. Professional, affordable, and they make my yard look amazing."</p>
-                        <p class="font-semibold">- xxxxx.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <div class="bg-gray-50 p-6 rounded-lg shadow-sm text-center">
+          <div class="text-orange-500 mb-4">
+            <i data-feather="star" class="w-10 h-10"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Quality Results</h3>
+          <p class="text-gray-600">Professional equipment and techniques for superior lawn care.</p>
+        </div>
 
-        <!-- CTA Section -->
-        <section class="py-16 bg-orange-600 text-white">
-            <div class="container mx-auto px-4 text-center">
-                <h2 class="text-3xl font-bold mb-6">Ready to Transform Your Yard?</h2>
-                <p class="text-xl mb-8 max-w-2xl mx-auto">Get a free estimate today and experience the Orange Power difference.</p>
-                <a href="contact.html" class="inline-block bg-white text-orange-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">Contact Us Now</a>
-            </div>
-        </section>
-    </main>
+        <div class="bg-gray-50 p-6 rounded-lg shadow-sm text-center">
+          <div class="text-orange-500 mb-4">
+            <i data-feather="shield" class="w-10 h-10"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Fully Insured</h3>
+          <p class="text-gray-600">Peace of mind with our fully insured and bonded services.</p>
+        </div>
+      </div>
+    </section>
 
-    <script src="components/footer.js"></script>
-    <custom-footer></custom-footer>
+    <!-- Gallery Section -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Our Work</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-2">
+          <div class="aspect-square overflow-hidden rounded-lg">
+            <img src="http://static.photos/nature/640x360/1" alt="Lawn care" class="w-full h-full object-cover">
+          </div>
+          <div class="aspect-square overflow-hidden rounded-lg">
+            <img src="http://static.photos/nature/640x360/2" alt="Mowing service" class="w-full h-full object-cover">
+          </div>
+          <div class="aspect-square overflow-hidden rounded-lg">
+            <img src="http://static.photos/nature/640x360/3" alt="Landscaping" class="w-full h-full object-cover">
+          </div>
+          <div class="aspect-square overflow-hidden rounded-lg">
+            <img src="http://static.photos/nature/640x360/4" alt="Yard work" class="w-full h-full object-cover">
+          </div>
+        </div>
+        <div class="text-center mt-8">
+          <a href="services.html" class="inline-flex items-center text-orange-600 font-semibold hover:text-orange-700">
+            View all services
+            <i data-feather="arrow-right" class="ml-2 w-5 h-5"></i>
+          </a>
+        </div>
+      </div>
+    </section>
 
-    <script>feather.replace();</script>
-    <script src="script.js"></script>
+    <!-- Call to Action -->
+    <section class="py-16 bg-orange-600 text-white text-center">
+      <h2 class="text-3xl font-bold mb-6">Ready to Transform Your Yard?</h2>
+      <p class="text-xl mb-8 max-w-2xl mx-auto">Get a free estimate today and experience the Orange Power difference.</p>
+      <a href="contact.html" class="inline-block bg-white text-orange-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">Contact Us Now</a>
+    </section>
+  </main>
 
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-8 text-center">
+    <p>&copy; 2025 Orange Power Outdoors. All rights reserved.</p>
+  </footer>
+
+  <script>feather.replace();</script>
 </body>
 </html>
