@@ -1,0 +1,5 @@
+body { font-family:sans-serif; margin:0; } 
+header,footer { background:#FF6E00; color:#fff; text-align:center; padding:1rem; } 
+nav a { color:#fff; margin:0 1rem; text-decoration:none; font-weight:bold; } 
+.hero { text-align:center; padding:4rem 1rem; background:#f3f3f3; } 
+.btn { background:#FF6E00; color:#fff; padding:.75rem 1.25rem; border-radius:6px; text-decoration:none; } 
