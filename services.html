@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Orange Power Outdoors</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        orange: {
+                            '500': '#FF7F24',
+                            '600': '#E66A00',
+                            '700': '#CC5500'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="components/navbar.js"></script>
+</head>
+<body class="bg-gray-50">
+    <custom-navbar></custom-navbar>
+
+    <main class="min-h-[calc(100vh-160px)]">
+        <!-- Services Header -->
+        <section class="relative bg-orange-500 text-white py-24">
+            <div class="container mx-auto px-4 text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Our Services</h1>
+                <p class="text-xl">Comprehensive lawn care solutions tailored to your needs</p>
+            </div>
+        </section>
+
+        <!-- Services List -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <!-- Service 1 -->
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <div class="flex-shrink-0">
+                            <div class="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center">
+                                <i data-feather="scissors" class="text-orange-600 w-8 h-8"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Residential Lawn Mowing</h3>
+                            <p class="text-gray-600">Weekly, bi-weekly or monthly mowing services to keep your lawn looking its best. We use professional commercial mowers and follow proper cutting techniques.</p>
+                            <div class="mt-4">
+                                <span class="inline-block bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-sm font-semibold">Starting at $35</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <div class="flex-shrink-0">
+                            <div class="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center">
+                                <i data-feather="layers" class="text-orange-600 w-8 h-8"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Commercial Landscape Maintenance</h3>
+                            <p class="text-gray-600">Complete landscape maintenance for businesses, HOAs, and properties. Includes mowing, edging, trimming, and blow-off of hard surfaces.</p>
+                            <div class="mt-4">
+                                <span class="inline-block bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-sm font-semibold">Custom Pricing</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <div class="flex-shrink-0">
+                            <div class="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center">
+                                <i data-feather="sun" class="text-orange-600 w-8 h-8"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Seasonal Cleanups</h3>
+                            <p class="text-gray-600">Spring and fall cleanups including leaf removal, debris cleanup, pruning, and preparation of your landscape for the changing seasons.</p>
+                            <div class="mt-4">
+                                <span class="inline-block bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-sm font-semibold">Starting at $100</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <div class="flex-shrink-0">
+                            <div class="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center">
+                                <i data-feather="droplet" class="text-orange-600 w-8 h-8"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Hedge & Shrub Trimming</h3>
+                            <p class="text-gray-600">Professional shaping and trimming of hedges, bushes and shrubs to maintain healthy growth and aesthetic appeal.</p>
+                            <div class="mt-4">
+                                <span class="inline-block bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-sm font-semibold">Starting at $50</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 5 -->
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <div class="flex-shrink-0">
+                            <div class="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center">
+                                <i data-feather="tree" class="text-orange-600 w-8 h-8"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Mulching Services</h3>
+                            <p class="text-gray-600">Premium mulch installation to protect your plants, retain moisture, and enhance the beauty of your landscape beds.</p>
+                            <div class="mt-4">
+                                <span class="inline-block bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-sm font-semibold">Starting at $75</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 6 -->
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <div class="flex-shrink-0">
+                            <div class="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center">
+                                <i data-feather="gift" class="text-orange-600 w-8 h-8"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Gift Certificates</h3>
+                            <p class="text-gray-600">Give the gift of a beautiful lawn! Perfect for holidays, birthdays or just to show someone you care about their outdoor space.</p>
+                            <div class="mt-4">
+                                <span class="inline-block bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-sm font-semibold">Any Amount</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-16 text-center">
+                    <a href="contact.html" class="inline-flex items-center bg-orange-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 transition">
+                        Request a Free Estimate
+                        <i data-feather="arrow-right" class="ml-2 w-5 h-5"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Areas -->
+        <section class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12">Service Areas</h2>
+                <div class="max-w-4xl mx-auto">
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                        <div class="bg-white p-4 rounded-lg shadow-sm text-center">
+                            <i data-feather="map-pin" class="text-orange-500 w-6 h-6 mx-auto mb-2"></i>
+                            <h3 class="font-semibold">Downtown</h3>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm text-center">
+                            <i data-feather="map-pin" class="text-orange-500 w-6 h-6 mx-auto mb-2"></i>
+                            <h3 class="font-semibold">East Side</h3>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm text-center">
+                            <i data-feather="map-pin" class="text-orange-500 w-6 h-6 mx-auto mb-2"></i>
+                            <h3 class="font-semibold">West End</h3>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm text-center">
+                            <i data-feather="map-pin" class="text-orange-500 w-6 h-6 mx-auto mb-2"></i>
+                            <h3 class="font-semibold">North Suburbs</h3>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm text-center">
+                            <i data-feather="map-pin" class="text-orange-500 w-6 h-6 mx-auto mb-2"></i>
+                            <h3 class="font-semibold">South Suburbs</h3>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm text-center">
+                            <i data-feather="map-pin" class="text-orange-500 w-6 h-6 mx-auto mb-2"></i>
+                            <h3 class="font-semibold">Surrounding Areas</h3>
+                        </div>
+                    </div>
+                    <p class="text-center mt-8 text-gray-600">Don't see your neighborhood listed? Contact us to check availability in your area.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="components/footer.js"></script>
+    <custom-footer></custom-footer>
+
+    <script>feather.replace();</script>
+    <script src="script.js"></script>
+</body>
+</html>
