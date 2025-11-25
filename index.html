@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Orange Power Outdoors - Professional Lawn Care</title>
@@ -25,104 +26,408 @@
 
 <body class="bg-gray-50 font-sans">
 
-  <!-- Static Navigation Bar -->
-  <header class="bg-orange-700 text-white">
+  <!-- Floating Navigation Bar -->
+  <header class="bg-orange-500 text-black border-b-4 border-black fixed top-0 left-0 w-full z-50">
     <div class="container mx-auto flex justify-between items-center px-6 py-4">
-      <h1 class="text-2xl font-bold">Orange Power Outdoors</h1>
+      <h1 class="text-2xl font-bold italic">Orange Power Outdoors</h1>
       <nav class="space-x-6">
         <a href="index.html" class="hover:text-orange-200">Home</a>
         <a href="about.html" class="hover:text-orange-200">About</a>
         <a href="services.html" class="hover:text-orange-200">Services</a>
-        <a href="contact.html" class="hover:text-orange-200">Contact</a>
-        <a href="contact.html" class="bg-white text-orange-600 px-4 py-2 rounded-md font-semibold hover:bg-orange-100 transition">Get a Quote</a>
+        <!-- <a href="contact.html" class="hover:text-orange-200">Contact</a>> -->
+        <a href="contact.html" class="bg-white text-orange-600 px-4 py-2 rounded-md font-semibold hover:bg-[#FEE8D6] transition">Get a Quote</a>
       </nav>
     </div>
   </header>
 
-  <main>
+  <main class="pt-10">
     <!-- Hero Section -->
-    <section class="relative text-white bg-center bg-cover" 
-         style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/Assassin\'s\ Creed\ Odyssey.jpg');">
+
+    <!--<section class="relative text-white bg-center bg-cover min-h-[600px]" 
+         style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/Assassin\'s\ Creed\ Odyssey.jpg');"> -->
+
+    <section class="relative text-white bg-center bg-cover min-h-[600px]" 
+         style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/OrangePO.png');">
+
+        <div class="h-24 md:h-24"></div>
         <div class="container mx-auto px-4 py-24 md:py-32 text-center">
-            <h2 class="text-4xl md:text-5xl font-bold mb-6">Professional Lawn Care Services</h2>
-            <p class="text-xl mb-8">Orange Power Outdoors delivers premium mowing and landscaping services with unmatched quality and reliability.</p>
+            <h2 class="text-4xl md:text-5xl font-bold italic mb-6 text-orange-500">Orange Power Outdoors</h2>
+            <p class="text-xl mb-4">Catering to all your outdoor needs.</p>
+            <p class="text-l text-gray-200 text-black mb-8">Stillwater, OK</p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="services.html" class="bg-white text-orange-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">Our Services</a>
+                <a href="services.html" class="bg-stone-800 text-orange-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">Our Services</a>
                 <a href="contact.html" class="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-orange-600 transition">Get a Quote</a>
             </div>
         </div>
     </section>
 
+    <!-- BORDER -->
+    <hr class="border-2 border-black">
 
     <!-- Features Section -->
-    <section class="py-16 bg-white">
-      <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="bg-gray-50 p-6 rounded-lg shadow-sm text-center">
-          <div class="text-orange-500 mb-4">
-            <i data-feather="clock" class="w-10 h-10"></i>
+    <section class="pt-10 pb-16 bg-orange-500">
+      <h2 class="text-3xl font-bold text-center mb-4 text-black">The Process</h2>
+      <div class="mx-auto bg-black h-1 w-16 mb-12"></div>
+
+      
+
+      <div class="relative container mx-auto px-4 max-w-5xl grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Connecting line behind the cards (desktop only) -->
+      <div class="hidden md:block absolute top-[50%] left-6 right-5 h-1 bg-black z-0"></div>
+
+      <!-- Arrows #BLANKED OUT UNTIL TBD 
+      <div class="absolute top-1/2 -translate-y-[48%] left-[32%] text-black text-2xl z-[2]">
+        ➜
+      </div>
+
+      <div class="absolute top-1/2 -translate-y-[48%] left-[65%] text-black text-2xl z-[2]">
+        ➜
+      </div>
+      -->
+
+        <!-- Consultation Box -->
+        <div class="bg-stone-800 p-6 rounded-lg shadow-sm text-center z-10">
+          <div class="text-orange-500 mb-4 flex justify-center">
+            <i data-feather="phone" class="w-10 h-10"></i>
           </div>
-          <h3 class="text-xl font-semibold mb-2">Reliable Service</h3>
-          <p class="text-gray-600">Consistent, on-time service you can count on week after week.</p>
+          <h3 class="text-xl text-white font-semibold mb-2">Consultation</h3>
+          <p class="text-sm text-gray-200">Starting with a informative conversation, taking proper account of customer vision and specific needs for their property.</p>
         </div>
 
-        <div class="bg-gray-50 p-6 rounded-lg shadow-sm text-center">
-          <div class="text-orange-500 mb-4">
-            <i data-feather="star" class="w-10 h-10"></i>
+        <!-- Planning Box -->
+        <div class="bg-stone-800 p-6 rounded-lg shadow-sm text-center z-10">
+          <div class="text-orange-500 mb-4 flex justify-center">
+            <i data-feather="edit" class="w-10 h-10"></i>
           </div>
-          <h3 class="text-xl font-semibold mb-2">Quality Results</h3>
-          <p class="text-gray-600">Professional equipment and techniques for superior lawn care.</p>
+          <h3 class="text-xl text-white  font-semibold mb-2">Planning</h3>
+          <p class="text-sm text-gray-200">Using information from the consultation, we plan out all applications that addresses customer necessities.</p>
         </div>
-
-        <div class="bg-gray-50 p-6 rounded-lg shadow-sm text-center">
-          <div class="text-orange-500 mb-4">
-            <i data-feather="shield" class="w-10 h-10"></i>
+        
+        <!-- Implementation Box -->
+        <div class="bg-stone-800 p-6 rounded-lg shadow-sm text-center z-10">
+          <div class="text-orange-500 mb-4 flex justify-center">
+            <i data-feather="tool" class="w-10 h-10"></i>
           </div>
-          <h3 class="text-xl font-semibold mb-2">Fully Insured</h3>
-          <p class="text-gray-600">Peace of mind with our fully insured and bonded services.</p>
+          <h3 class="text-xl text-white  font-semibold mb-2">Implementation</h3>
+          <p class="text-sm text-gray-200">We bring the plan to the property, executing and finishing tasks within a sustainable timeline.</p>
         </div>
       </div>
     </section>
+
+    <!-- BORDER -->
+    <hr class="border-2 border-black">
+
+    <!-- Seasonal Services Section -->
+    <section class="py-16 bg-stone-800">
+      <div class="container mx-auto px-4 max-w-7xl">
+        <h2 class="text-3xl font-bold text-center mb-6 text-orange-500">
+          Year-Round Services
+        </h2>
+
+        <div class="mx-auto bg-orange-500 h-1 w-24 mb-12"></div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+
+
+          <!-- Landscaping Needs -->
+          <div class="bg-orange-600 border-2 border-black rounded-lg shadow-sm p-6 md:p-8">
+            <h3 class="text-2xl text-center font-bold mb-4 text-center text-stone-200">
+              Landscaping
+            </h3>
+            <p class="text-stone-200 text-center mb-8">
+              Keep your property fresh and sharp throughout the year with our refined catalogue of landscaping services. 
+              <br>
+              <br>
+              We do a variety of landscaping work - mowing, trimming, edging, cleanups, gardens, mulch rock, flowerbeds, and more.
+            </p>
+            <div class="text-center">
+               <a href="services.html"
+                class="inline-block bg-stone-900 text-orange-600 px-8 py-3 mb-4 rounded-lg font-semibold hover:bg-gray-100 transition">
+                Our Services
+              </a>
+            </div>
+            <p class="mt-4 text-sm text-center text-stone-900 font-medium">
+              <span class="uppercase tracking-wide"></span>
+              Landscaping services are offered for both residential and commerical properties.
+            </p>
+
+            <!-- # LEAVING HERE IN CASE OF NEED TO REVERT BACK TO LIST FORMAT#
+            <ul class="list-disc list-inside space-y-2 text-stone-200">
+              <li>Residential and Commercial Lawncare</li>
+            -->
+              
+            </ul>
+          </div>
+          
+
+          <!-- Hardscaping Services -->
+          <div class="bg-amber-600 border-2 border-black rounded-lg shadow-sm p-6 md:p-8">
+            <h3 class="text-2xl text-center font-bold mb-4 text-white">
+              Hardscaping
+            </h3>
+            <p class="text-white text-center mb-14">
+              Improve your property structure with human-formed applications, transforming the space you live and breathe in.
+              <br>
+              <br>
+              We install fences, lay gravel, build retaining walls, route irrigation systems, and more.
+            </p>
+            
+            <div class="text-center">
+               <a href="services.html"
+                class="inline-block bg-stone-900 text-orange-600 px-8 py-3 mb-4 rounded-lg font-semibold hover:bg-gray-100 transition">
+                Our Services
+              </a>
+            </div>
+
+            <p class="mt-4 text-sm text-center text-stone-900 font-medium">
+              <span class="uppercase tracking-wide"></span>
+              Hardscaping services are offered for both residential and commerical properties.
+            </p>
+          </div>
+
+          <!-- Winter Services (Commercial Only) -->
+          <div class="bg-orange-400 border-2 border-black rounded-lg shadow-sm p-6 md:p-8">
+            <h3 class="text-2xl text-center font-bold mb-4 text-black">
+              Winter Services
+            </h3>
+            <p class="text-stone-800 text-center mb-8">
+              Keeping your property safe and accessible from the harsh weather, whenever you need it.
+              <br>
+              <br>
+              We do general snow removal, de-icing applications, and pre/post-storm scheduling. 
+              <br>
+              <br>           
+              Inquire further for any specifics.
+            </p>
+    
+            <!-- CHANGE TO SNOW REMOVAL PAGE-->
+            <div class="text-center">
+               <a href="services.html"
+                class="inline-block bg-stone-900 text-orange-600 px-8 py-3 mb-4 rounded-lg font-semibold hover:bg-gray-100 transition">
+                Snow Removal
+              </a>
+            </div>
+
+            <p class="mt-4 text-sm text-black text-center font-medium">
+              <span class="uppercase tracking-wide"></span>
+              Winter services are offered for <span class="text-bold text-stone-200">commercial properties only.</span>
+            </p>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+        </section>
+
+
+    <!-- BORDER -->
+    <hr class="border-2 border-black">
+
 
     <!-- Gallery Section -->
-    <section class="py-16 bg-gray-50">
+     <section class="relative text-orange-500 bg-center bg-cover min-h-[700px] py-12" 
+         style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(236, 119, 10, 0.253) ), url('images/OrangePO.png');">
+    <!-- <section class="py-16 bg-gray-100"> -->
       <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center mb-12">Our Work</h2>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-2">
-          <div class="aspect-square overflow-hidden rounded-lg">
-            <img src="http://static.photos/nature/640x360/1" alt="Lawn care" class="w-full h-full object-cover">
-          </div>
-          <div class="aspect-square overflow-hidden rounded-lg">
-            <img src="http://static.photos/nature/640x360/2" alt="Mowing service" class="w-full h-full object-cover">
-          </div>
-          <div class="aspect-square overflow-hidden rounded-lg">
-            <img src="http://static.photos/nature/640x360/3" alt="Landscaping" class="w-full h-full object-cover">
-          </div>
-          <div class="aspect-square overflow-hidden rounded-lg">
-            <img src="http://static.photos/nature/640x360/4" alt="Yard work" class="w-full h-full object-cover">
-          </div>
+        <h2 class="text-3xl font-bold text-center text-white mb-12">Gallery</h2>
+
+        <div class="relative w-full mx-auto px-4">
+          <!-- Slides wrapper: JavaScript will fill this -->
+          <div id="galleryTrack" class="flex gap-2 justify-center w-full overflow-hidden"></div>
+
+          <!-- Previous button -->
+          <button id="galleryPrev"
+                  class="absolute left-16 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-2 shadow">
+            <i data-feather="chevron-left"></i>
+          </button>
+
+          <!-- Next button -->
+          <button id="galleryNext"
+                  class="absolute right-16 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-2 shadow">
+            <i data-feather="chevron-right"></i>
+          </button>
         </div>
-        <div class="text-center mt-8">
-          <a href="services.html" class="inline-flex items-center text-orange-600 font-semibold hover:text-orange-700">
-            View all services
-            <i data-feather="arrow-right" class="ml-2 w-5 h-5"></i>
-          </a>
+
+        <div class="max-w-7xl mx-auto px-4 mt-6">
+        <div id="galleryThumbs" class="flex flex-wrap justify-center gap-2"></div>
         </div>
+
       </div>
-    </section>
+    </section> 
+
+    
+
+    <!-- BORDER -->
+    <hr class="border-2 border-black">
 
     <!-- Call to Action -->
-    <section class="py-16 bg-orange-600 text-white text-center">
-      <h2 class="text-3xl font-bold mb-6">Ready to Transform Your Yard?</h2>
-      <p class="text-xl mb-8 max-w-2xl mx-auto">Get a free estimate today and experience the Orange Power difference.</p>
-      <a href="contact.html" class="inline-block bg-white text-orange-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">Contact Us Now</a>
+    <section class="py-8 bg-orange-600 text-white text-center">
+      <h2 class="text-3xl font-bold mb-6">Ready to Transform Your Property?</h2>
+      <p class="text-xl text-black mb-8 max-w-2xl mx-auto">Get a free estimate today.</p>
+      <a href="contact.html" class="inline-block bg-white text-orange-600 px-8 py-2 rounded-lg font-semibold hover:bg-gray-100 transition">Contact Us Now</a>
+      <p class="text-sm pt-8 pb-2">For questions, reach us at orangepowermowing@gmail.com.</p>
     </section>
   </main>
 
   <!-- Footer -->
-  <footer class="bg-gray-800 text-white py-8 text-center">
+  <footer class="bg-stone-800 text-white py-8 text-center">
     <p>&copy; 2025 Orange Power Outdoors. All rights reserved.</p>
   </footer>
 
+
+
+
+
+
+  <!-- SCRIPTS -->
+
   <script>feather.replace();</script>
+  <script>
+  // List of images in order (1..N)
+  const galleryImages = [
+    { src: 'images/IMG_A.png', alt: 'Lawn care' },
+    { src: 'images/IMG_B.png', alt: 'Mowing' },
+    { src: 'images/IMG_C.png', alt: 'Landscaping' },
+    { src: 'images/IMG_D.png', alt: 'Yard work' },
+    { src: 'images/IMG_E.png', alt: 'Yard work' },
+    { src: 'images/IMG_F.png', alt: 'Yard work' },
+    { src: 'images/IMG_G.jpg', alt: 'Yard work' },
+    { src: 'images/IMG_H.jpg', alt: 'Yard work' },
+    { src: 'images/IMG_I.jpg', alt: 'Yard work' },
+    { src: 'images/IMG_0633.png', alt: 'Yard work' },
+    { src: 'images/IMG_J.png', alt: 'Yard work' },
+    { src: 'images/IMG_7007.png', alt: 'Yard work' },
+    { src: 'images/IMG_K.png', alt: 'Yard work' }
+  ];
+
+  const visibleCount = 3;   // how many big images visible at once
+  let currentIndex = 0;     // index of centered image
+
+  const track   = document.getElementById('galleryTrack');
+  const prevBtn = document.getElementById('galleryPrev');
+  const nextBtn = document.getElementById('galleryNext');
+  const thumbs  = document.getElementById('galleryThumbs'); // <- add this div in HTML
+
+  // --- Main carousel (no animation) ---
+  function renderGallery() {
+    const n    = galleryImages.length;
+    const half = Math.floor(visibleCount / 2);
+
+    track.innerHTML = '';
+
+    for (let offset = -half; offset <= half; offset++) {
+      const idx     = (currentIndex + offset + n) % n;
+      const imgData = galleryImages[idx];
+      const isEdge  = offset === -half || offset === half;
+
+      const slide = document.createElement('div');
+      slide.className =
+        'slide w-[18rem] sm:w-[22rem] md:w-[24rem] lg:w-[28rem] ' +
+        'aspect-[4/4] overflow-hidden rounded-xl shadow-xl flex-shrink-0 ' +
+        'border border-white/40'
+        ;
+
+      const img = document.createElement('img');
+      img.src       = imgData.src;
+      img.alt       = imgData.alt;
+      img.className = 'w-full h-full object-cover';
+
+      slide.appendChild(img);
+      track.appendChild(slide);
+
+      // click a big image to center it
+      slide.addEventListener('click', () => {
+        currentIndex = idx;
+        renderGallery();
+        renderThumbs();
+      });
+    }
+  }
+
+  // --- Thumbnail strip under the gallery ---
+  function renderThumbs() {
+    if (!thumbs) return; // safety if HTML not added yet
+
+    thumbs.innerHTML = '';
+
+    galleryImages.forEach((imgData, idx) => {
+      const thumbBtn = document.createElement('button');
+      thumbBtn.type = 'button';
+
+      // base thumbnail style
+      thumbBtn.className =
+        'overflow-hidden rounded-md border-2 w-16 h-16 sm:w-20 sm:h-20';
+
+      // highlight current image
+      if (idx === currentIndex) {
+        thumbBtn.className += ' border-orange-500';
+      } else {
+        thumbBtn.className += ' border-transparent opacity-80 hover:opacity-100';
+      }
+
+      const img = document.createElement('img');
+      img.src       = imgData.src;
+      img.alt       = imgData.alt;
+      img.className = 'w-full h-full object-cover';
+
+      thumbBtn.appendChild(img);
+      thumbs.appendChild(thumbBtn);
+
+      // click a thumbnail to center that image
+      thumbBtn.addEventListener('click', () => {
+        currentIndex = idx;
+        renderGallery();
+        renderThumbs();
+      });
+    });
+  }
+
+  // --- Arrow controls (no animation, just jump) ---
+  prevBtn.addEventListener('click', () => {
+    const n = galleryImages.length;
+    currentIndex = (currentIndex - 1 + n) % n;
+    renderGallery();
+    renderThumbs();
+  });
+
+  nextBtn.addEventListener('click', () => {
+    const n = galleryImages.length;
+    currentIndex = (currentIndex + 1) % n;
+    renderGallery();
+    renderThumbs();
+  });
+  // Preload gallery images to avoid white flash when they first appear
+function preloadGalleryImages(callback) {
+  let loaded = 0;
+  const total = galleryImages.length;
+
+  if (total === 0) {
+    if (callback) callback();
+    return;
+  }
+
+  galleryImages.forEach((imgData) => {
+    const img = new Image();
+    img.src = imgData.src;
+
+    // count both success and error so we don't hang forever
+    img.onload = img.onerror = () => {
+      loaded++;
+      if (loaded === total && typeof callback === 'function') {
+        callback();
+      }
+    };
+  });
+}
+
+  // Initial draw
+  preloadGalleryImages(() => {
+  renderGallery();
+  renderThumbs();
+});
+
+</script>
+
 </body>
 </html>
