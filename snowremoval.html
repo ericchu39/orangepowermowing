@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Orange Power Outdoors</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        orange: {
+                            '500': '#FF7F24',
+                            '600': '#E66A00',
+                            '700': '#CC5500'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    
+    <!-- Iconify (Outdoor / Nature Icons) -->
+    <script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
+
+
+    <script src="components/navbar.js"></script>
+</head>
+<body class="bg-orange-500">
+    
+
+    <!-- Floating Nav Bar -->
+    <header class="bg-orange-400 text-black border-b-4 border-black fixed top-0 left-0 w-full z-50">
+    <div class="container mx-auto flex justify-between items-center px-6 py-4">
+      <h1 class="text-2xl font-bold italic">Orange Power Outdoors</h1>
+      <nav class="space-x-6">
+        <a href="index.html" class="hover:text-orange-200 italic">Home</a>
+        <a href="gallery.html" class="hover:text-orange-200 italic">Gallery</a>
+        <a href="services.html" class="hover:text-orange-200 italic">Services</a>
+        <a href="snowremoval.html" class="hover:text-orange-200 italic">Snow Removal</a>
+        <!-- <a href="contact.html" class="hover:text-orange-200">Contact</a>> -->
+        <a href="contact.html" class="bg-white text-orange-600 px-4 py-2 rounded-md font-semibold hover:bg-orange-100 transition">Get a Quote</a>
+      </nav>
+    </div>
+  </header>
+
+    <main class="min-h-[calc(100vh-160px)]">
+        <!-- Services Header -->
+        <section class="relative bg-stone-800 py-8">
+            <div class="container mx-auto px-4 text-center py-16">
+                <h1 class="text-4xl md:text-5xl text-white font-bold mb-8 mt-12">Snow Removal</h1>
+                <p class="text-xl text-white">For when winters are rough.</p>
+            <!-- Request Quote Button -->
+                <div class="mt-12 text-center">
+                    <a href="contact.html" class="inline-flex items-center bg-orange-500 text-white px-8 py-2 mb-0 rounded-lg font-semibold hover:bg-orange-600 transition">
+                        Request a Free Estimate
+                        <i data-feather="arrow-right" class="ml-2 w-5 h-5"></i>
+                    </a>
+                </div>
+            </div>
+            
+        </section>
+
+    <!-- BORDER -->
+    <hr class="border-2 border-black">
+
+        <!-- Services List -->
+        <section class="py-16 bg-orange-400">
+            <div class="container mx-auto px-4">
+
+                <h2 class="text-2xl font-bold text-stone-900 text-center mb-6">Keep your property safe and accessible throughout the winter.</h2>
+                <h2 class="text-l italic text-stone-800 font-bold text-center mb-8">Services listed are available for <span class="text-bold text-stone-200">commercial properties only.</span></h2>
+                <div class="mx-auto bg-stone-900 h-1 w-48 mb-16"></div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-4">
+                    <!-- Service 1 -->
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <div class="flex-shrink-0">
+                            <div class="bg-stone-900 w-16 h-16 rounded-full flex items-center justify-center">
+                                <span class="iconify text-orange-600 w-9 h-9" data-icon="la:snowplow"></span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Snow Removal</h3>
+                            <p class="text-stone-900">Full commercial snow removal - <br>lots, driveways, sidewalks.</p>
+                            <div class="mt-4">
+                                <span class="inline-block bg-stone-900 text-white px-3 py-1 rounded-full text-sm font-semibold">Starting at $35</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <div class="flex-shrink-0">
+                            <div class="bg-stone-900 w-16 h-16 rounded-full flex items-center justify-center">
+                                <span class="iconify text-orange-600 w-9 h-9" data-icon="ix:maintenance"></span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">De-Icing Applications</h3>
+                            <p class="text-stone-900">Full de-icing of frozen rain, black ice, hard snow.</p>
+                            <div class="mt-4">
+                                <span class="inline-block bg-stone-900 text-white px-3 py-1 rounded-full text-sm font-semibold">Custom Pricing</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <div class="flex-shrink-0">
+                            <div class="bg-stone-900 w-16 h-16 rounded-full flex items-center justify-center">
+                                <span class="iconify text-orange-600 w-8 h-8" data-icon="mdi:seed"></span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Seasonal Cleanups</h3>
+                            <p class="text-stone-900">Spring and fall cleanups - leaf removal, debris cleanup, pruning.</p>
+                            <div class="mt-4">
+                                <span class="inline-block bg-stone-900 text-white px-3 py-1 rounded-full text-sm font-semibold">Starting at $100</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+
+                </div>
+
+                
+            </div>
+        </section>
+
+        <!-- BORDER -->
+    <hr class="border-2 border-black">
+
+        <!-- Service Areas -->
+        <section class="py-8 bg-stone-800">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center text-white mb-12">Want to See the Work we Do?</h2>
+                    <div class="mt-12 mb-8 text-center">
+                        <a href="gallery.html" class="inline-flex items-center bg-orange-500 text-white px-8 py-2 mb-0 rounded-lg font-semibold hover:bg-orange-600 transition">
+                            Click Here to See Pictures
+                        </a>
+                    </div>
+                    
+                    <p class="text-center mt-8 text-gray-600">Don't see the service you need? Contact us for specific requests.</p>
+                
+            </div>
+        </section>
+
+    <!-- BORDER -->
+    <hr class="border-2 border-black">
+
+    <!-- Footer -->
+    <footer class="bg-stone-800 text-white py-8 text-center">
+        <p>&copy; 2025 Orange Power Outdoors. All rights reserved.</p>
+    </footer>
+
+
+
+    </main>
+
+    
+    
+
+    <script>feather.replace();</script>
+    <script src="script.js"></script>
+</body>
+</html>

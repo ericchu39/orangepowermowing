@@ -23,18 +23,25 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <script src="https://unpkg.com/feather-icons"></script>
+    
+    <!-- Iconify (Outdoor / Nature Icons) -->
+    <script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
+
+
     <script src="components/navbar.js"></script>
 </head>
-<body class="bg-gray-50">
-    <custom-navbar></custom-navbar>
+<body class="bg-orange-500">
+    
 
-    <header class="bg-orange-600 text-white">
+    <!-- Floating Nav Bar -->
+    <header class="bg-orange-600 text-black border-b-4 border-black fixed top-0 left-0 w-full z-50">
     <div class="container mx-auto flex justify-between items-center px-6 py-4">
-      <h1 class="text-2xl font-bold">Orange Power Outdoors</h1>
+      <h1 class="text-2xl font-bold italic">Orange Power Outdoors</h1>
       <nav class="space-x-6">
-        <a href="index.html" class="hover:text-orange-200">Home</a>
-        <a href="about.html" class="hover:text-orange-200">About</a>
-        <a href="services.html" class="hover:text-orange-200">Services</a>
+        <a href="index.html" class="hover:text-orange-200 italic">Home</a>
+        <a href="gallery.html" class="hover:text-orange-200 italic">Gallery</a>
+        <a href="services.html" class="hover:text-orange-200 italic">Services</a>
+        <a href="snowremoval.html" class="hover:text-orange-200 italic">Snow Removal</a>
         <!-- <a href="contact.html" class="hover:text-orange-200">Contact</a>> -->
         <a href="contact.html" class="bg-white text-orange-600 px-4 py-2 rounded-md font-semibold hover:bg-orange-100 transition">Get a Quote</a>
       </nav>
@@ -43,29 +50,48 @@
 
     <main class="min-h-[calc(100vh-160px)]">
         <!-- Services Header -->
-        <section class="relative bg-orange-500 text-white py-24">
-            <div class="container mx-auto px-4 text-center">
-                <h1 class="text-4xl md:text-5xl font-bold mb-4">Our Services</h1>
-                <p class="text-xl">Comprehensive lawn care solutions tailored to your needs</p>
+        <section class="relative bg-stone-800 py-8">
+            <div class="container mx-auto px-4 text-center py-16">
+                <h1 class="text-4xl md:text-5xl text-white font-bold mb-8 mt-12">Our Services</h1>
+                <p class="text-xl text-white">Comprehensive landscaping & hardscaping.</p>
+            <!-- Request Quote Button -->
+                <div class="mt-12 text-center">
+                    <a href="contact.html" class="inline-flex items-center bg-orange-500 text-white px-8 py-2 mb-0 rounded-lg font-semibold hover:bg-orange-600 transition">
+                        Request a Free Estimate
+                        <i data-feather="arrow-right" class="ml-2 w-5 h-5"></i>
+                    </a>
+                </div>
             </div>
+            
         </section>
 
+    <!-- BORDER -->
+    <hr class="border-2 border-black">
+
         <!-- Services List -->
-        <section class="py-16 bg-white">
+        <section class="py-16 bg-orange-500">
             <div class="container mx-auto px-4">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+
+                <h2 class="text-2xl font-bold text-stone-900 text-center mb-6">Please note that all pricing is subject to quoting.</h2>
+                
+                <div class="mt-4 mb-8">
+                    <div class="flex justify-center w-[40%] bg-stone-900 text-white px-3 py-2 rounded-full text-sm font-semibold italic mx-auto block">All services listed are available for residential and commerical properties.</div>
+                </div>
+                
+
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-4 mt-16">
                     <!-- Service 1 -->
                     <div class="flex flex-col md:flex-row gap-6">
                         <div class="flex-shrink-0">
-                            <div class="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center">
-                                <i data-feather="scissors" class="text-orange-600 w-8 h-8"></i>
+                            <div class="bg-stone-900 w-16 h-16 rounded-full flex items-center justify-center">
+                                <span class="iconify text-orange-600 w-9 h-9" data-icon="mdi:mower-bag"></span>
                             </div>
                         </div>
                         <div>
-                            <h3 class="text-xl font-semibold mb-2">Residential Lawn Mowing</h3>
-                            <p class="text-gray-600">Weekly, bi-weekly or monthly mowing services to keep your lawn looking its best. We use professional commercial mowers and follow proper cutting techniques.</p>
+                            <h3 class="text-xl font-semibold mb-2">Residential Lawn Care</h3>
+                            <p class="text-stone-900">Weekly, bi-weekly or monthly. Commercial equipment.</p>
                             <div class="mt-4">
-                                <span class="inline-block bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-sm font-semibold">Starting at $35</span>
+                                <span class="inline-block bg-stone-900 text-white px-3 py-1 rounded-full text-sm font-semibold">Starting at $45</span>
                             </div>
                         </div>
                     </div>
@@ -73,15 +99,15 @@
                     <!-- Service 2 -->
                     <div class="flex flex-col md:flex-row gap-6">
                         <div class="flex-shrink-0">
-                            <div class="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center">
-                                <i data-feather="layers" class="text-orange-600 w-8 h-8"></i>
+                            <div class="bg-stone-900 w-16 h-16 rounded-full flex items-center justify-center">
+                                <span class="iconify text-orange-600 w-9 h-9" data-icon="ix:maintenance"></span>
                             </div>
                         </div>
                         <div>
-                            <h3 class="text-xl font-semibold mb-2">Commercial Landscape Maintenance</h3>
-                            <p class="text-gray-600">Complete landscape maintenance for businesses, HOAs, and properties. Includes mowing, edging, trimming, and blow-off of hard surfaces.</p>
+                            <h3 class="text-xl font-semibold mb-2">Commercial Maintenance</h3>
+                            <p class="text-stone-900">Complete landscape maintenance for businesses, HOAs, properties.</p>
                             <div class="mt-4">
-                                <span class="inline-block bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-sm font-semibold">Custom Pricing</span>
+                                <span class="inline-block bg-stone-900 text-white px-3 py-1 rounded-full text-sm font-semibold">Custom Pricing</span>
                             </div>
                         </div>
                     </div>
@@ -89,15 +115,15 @@
                     <!-- Service 3 -->
                     <div class="flex flex-col md:flex-row gap-6">
                         <div class="flex-shrink-0">
-                            <div class="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center">
-                                <i data-feather="sun" class="text-orange-600 w-8 h-8"></i>
+                            <div class="bg-stone-900 w-16 h-16 rounded-full flex items-center justify-center">
+                                <span class="iconify text-orange-600 w-8 h-8" data-icon="mdi:seed"></span>
                             </div>
                         </div>
                         <div>
                             <h3 class="text-xl font-semibold mb-2">Seasonal Cleanups</h3>
-                            <p class="text-gray-600">Spring and fall cleanups including leaf removal, debris cleanup, pruning, and preparation of your landscape for the changing seasons.</p>
+                            <p class="text-stone-900">Spring and fall cleanups - leaf removal, debris cleanup, pruning.</p>
                             <div class="mt-4">
-                                <span class="inline-block bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-sm font-semibold">Starting at $100</span>
+                                <span class="inline-block bg-stone-900 text-white px-3 py-1 rounded-full text-sm font-semibold">Starting at $100</span>
                             </div>
                         </div>
                     </div>
@@ -105,15 +131,16 @@
                     <!-- Service 4 -->
                     <div class="flex flex-col md:flex-row gap-6">
                         <div class="flex-shrink-0">
-                            <div class="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center">
-                                <i data-feather="droplet" class="text-orange-600 w-8 h-8"></i>
+                            <div class="bg-stone-900 w-16 h-16 rounded-full flex items-center justify-center">
+                                <span class="iconify text-orange-600 w-10 h-10" data-icon="healthicons:spraying"></span>
                             </div>
                         </div>
                         <div>
-                            <h3 class="text-xl font-semibold mb-2">Hedge & Shrub Trimming</h3>
-                            <p class="text-gray-600">Professional shaping and trimming of hedges, bushes and shrubs to maintain healthy growth and aesthetic appeal.</p>
+                            <h3 class="text-xl font-semibold mb-2">Chemical Applications</h3>
+                            <p class="text-stone-900">Use of herbicides, fertilizers.<br></p>
                             <div class="mt-4">
-                                <span class="inline-block bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-sm font-semibold">Starting at $50</span>
+                                <br>
+                                <span class="inline-block bg-stone-900 text-white px-3 py-1 rounded-full text-sm font-semibold">Starting at $50</span>
                             </div>
                         </div>
                     </div>
@@ -121,15 +148,15 @@
                     <!-- Service 5 -->
                     <div class="flex flex-col md:flex-row gap-6">
                         <div class="flex-shrink-0">
-                            <div class="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center">
-                                <i data-feather="shuffle" class="text-orange-600 w-8 h-8"></i>
+                            <div class="bg-stone-900 w-16 h-16 rounded-full flex items-center justify-center">
+                                <span class="iconify text-orange-600 w-8 h-8" data-icon="fluent-emoji-high-contrast:rock"></span>
                             </div>
                         </div>
                         <div>
-                            <h3 class="text-xl font-semibold mb-2">Mulching Services</h3>
-                            <p class="text-gray-600">Premium mulch installation to protect your plants, retain moisture, and enhance the beauty of your landscape beds.</p>
+                            <h3 class="text-xl font-semibold mb-2">Mulch & Rock</h3>
+                            <p class="text-stone-900">Mulch and/or rock installations - pathways and landscape beds.</p>
                             <div class="mt-4">
-                                <span class="inline-block bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-sm font-semibold">Starting at $75</span>
+                                <span class="inline-block bg-stone-900 text-white px-3 py-1 rounded-full text-sm font-semibold">Starting at $75</span>
                             </div>
                         </div>
                     </div>
@@ -137,68 +164,154 @@
                     <!-- Service 6 -->
                     <div class="flex flex-col md:flex-row gap-6">
                         <div class="flex-shrink-0">
-                            <div class="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center">
-                                <i data-feather="gift" class="text-orange-600 w-8 h-8"></i>
+                            <div class="bg-stone-900 w-16 h-16 rounded-full flex items-center justify-center">
+                                <span class="iconify text-orange-600 w-8 h-8" data-icon="mdi:grass"></span>
                             </div>
                         </div>
                         <div>
-                            <h3 class="text-xl font-semibold mb-2">Gift Certificates</h3>
-                            <p class="text-gray-600">Give the gift of a beautiful lawn! Perfect for holidays, birthdays or just to show someone you care about their outdoor space.</p>
+                            <h3 class="text-xl font-semibold mb-2">Sod Installation</h3>
+                            <p class="text-stone-900">Installation of sod.</p>
                             <div class="mt-4">
-                                <span class="inline-block bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-sm font-semibold">Any Amount</span>
+                                <br>
+                                <span class="inline-block bg-stone-900 text-white px-3 py-1 rounded-full text-sm font-semibold">Custom Pricing</span>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="mt-16 text-center">
-                    <a href="contact.html" class="inline-flex items-center bg-orange-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 transition">
-                        Request a Free Estimate
-                        <i data-feather="arrow-right" class="ml-2 w-5 h-5"></i>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Service Areas -->
-        <section class="py-16 bg-gray-50">
-            <div class="container mx-auto px-4">
-                <h2 class="text-3xl font-bold text-center mb-12">Service Areas</h2>
-                <div class="max-w-4xl mx-auto">
-                    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-                        <div class="bg-white p-4 rounded-lg shadow-sm text-center">
-                            <i data-feather="map-pin" class="text-orange-500 w-6 h-6 mx-auto mb-2"></i>
-                            <h3 class="font-semibold">Downtown</h3>
+                    <!-- Service 7 -->
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <div class="flex-shrink-0">
+                            <div class="bg-stone-900 w-16 h-16 rounded-full flex items-center justify-center">
+                                <span class="iconify text-orange-600 w-10 h-10" data-icon="mdi:pine-tree"></span>
+                            </div>
                         </div>
-                        <div class="bg-white p-4 rounded-lg shadow-sm text-center">
-                            <i data-feather="map-pin" class="text-orange-500 w-6 h-6 mx-auto mb-2"></i>
-                            <h3 class="font-semibold">East Side</h3>
-                        </div>
-                        <div class="bg-white p-4 rounded-lg shadow-sm text-center">
-                            <i data-feather="map-pin" class="text-orange-500 w-6 h-6 mx-auto mb-2"></i>
-                            <h3 class="font-semibold">West End</h3>
-                        </div>
-                        <div class="bg-white p-4 rounded-lg shadow-sm text-center">
-                            <i data-feather="map-pin" class="text-orange-500 w-6 h-6 mx-auto mb-2"></i>
-                            <h3 class="font-semibold">North Suburbs</h3>
-                        </div>
-                        <div class="bg-white p-4 rounded-lg shadow-sm text-center">
-                            <i data-feather="map-pin" class="text-orange-500 w-6 h-6 mx-auto mb-2"></i>
-                            <h3 class="font-semibold">South Suburbs</h3>
-                        </div>
-                        <div class="bg-white p-4 rounded-lg shadow-sm text-center">
-                            <i data-feather="map-pin" class="text-orange-500 w-6 h-6 mx-auto mb-2"></i>
-                            <h3 class="font-semibold">Surrounding Areas</h3>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Tree Work</h3>
+                            <p class="text-stone-900">Tree trimming, removal and tree stump removal.</p>
+                            <div class="mt-4">
+                                <span class="inline-block bg-stone-900 text-white px-3 py-1 rounded-full text-sm font-semibold">Any Amount</span>
+                            </div>
                         </div>
                     </div>
-                    <p class="text-center mt-8 text-gray-600">Don't see your neighborhood listed? Contact us to check availability in your area.</p>
+
+                    <!-- Service 8 -->
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <div class="flex-shrink-0">
+                            <div class="bg-stone-900 w-16 h-16 rounded-full flex items-center justify-center">
+                                <span class="iconify text-orange-600 w-9 h-9" data-icon="tabler:tractor"></span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Skidsteer Service</h3>
+                            <p class="text-stone-900">Equipment operations, brush hogging, gravel, dirtwork.</p>
+                            <div class="mt-4">
+                                <span class="inline-block bg-stone-900 text-white px-3 py-1 rounded-full text-sm font-semibold">Any Amount</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 9 -->
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <div class="flex-shrink-0">
+                            <div class="bg-stone-900 w-16 h-16 rounded-full flex items-center justify-center">
+                                <span class="iconify text-orange-600 w-8 h-8" data-icon="fa6-solid:medal"></span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Veteran Discounts</h3>
+                            <p class="text-stone-900">We offer discounted services for veterans. Inquire for details.</p>
+                            <div class="mt-4">
+                                <span class="inline-block bg-stone-900 text-white px-3 py-1 rounded-full text-sm font-semibold">Any Amount</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 10 -->
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <div class="flex-shrink-0">
+                            <div class="bg-stone-900 w-16 h-16 rounded-full flex items-center justify-center">
+                                <span class="iconify text-orange-600 w-10 h-10" data-icon="tabler:fence"></span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Fences</h3>
+                            <p class="text-stone-900">Fences - wood, metal. Electronic implementations available.</p>
+                            <div class="mt-4">
+                                <span class="inline-block bg-stone-900 text-white px-3 py-1 rounded-full text-sm font-semibold">Any Amount</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 11 -->
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <div class="flex-shrink-0">
+                            <div class="bg-stone-900 w-16 h-16 rounded-full flex items-center justify-center">
+                                <span class="iconify text-orange-600 w-10 h-10" data-icon="memory:wall-fill"></span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Retaining Walls</h3>
+                            <p class="text-stone-900">Retaining walls - concrete, timber, brick, natural stone.</p>
+                            <div class="mt-4">
+                                <span class="inline-block bg-stone-900 text-white px-3 py-1 rounded-full text-sm font-semibold">Any Amount</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 12 -->
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <div class="flex-shrink-0">
+                            <div class="bg-stone-900 w-16 h-16 rounded-full flex items-center justify-center">
+                                <span class="iconify text-orange-600 w-10 h-10" data-icon="material-symbols:sprinkler"></span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-l font-semibold mb-2">Irrigation/Sprinkler Systems</h3>
+                            <p class="text-stone-900">Irrigation and sprinkler systems so that your lawn can run itself. </p>
+                            <div class="mt-4">
+                                <span class="inline-block bg-stone-900 text-white px-3 py-1 rounded-full text-sm font-semibold">Any Amount</span>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
+
+                
             </div>
         </section>
+
+        <!-- BORDER -->
+    <hr class="border-2 border-black">
+
+        <!-- Service Areas -->
+        <section class="py-8 bg-stone-800">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center text-white mb-12">Want to See the Work we Do?</h2>
+                    <div class="mt-12 mb-8 text-center">
+                        <a href="gallery.html" class="inline-flex items-center bg-orange-500 text-white px-8 py-2 mb-0 rounded-lg font-semibold hover:bg-orange-600 transition">
+                            Click Here to See Pictures
+                        </a>
+                    </div>
+                    
+                    <p class="text-center mt-8 text-stone-200">Don't see the service you need? Contact us for specific requests.</p>
+                
+            </div>
+        </section>
+
+    <!-- BORDER -->
+    <hr class="border-2 border-black">
+
+    <!-- Footer -->
+    <footer class="bg-stone-800 text-white py-8 text-center">
+        <p>&copy; 2025 Orange Power Outdoors. All rights reserved.</p>
+    </footer>
+
+
+
     </main>
 
-    <script src="components/footer.js"></script>
-    <custom-footer></custom-footer>
+    
+    
 
     <script>feather.replace();</script>
     <script src="script.js"></script>

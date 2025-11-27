@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Orange Power Outdoors</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        orange: {
+                            '500': '#FF7F24',
+                            '600': '#E66A00',
+                            '700': '#CC5500'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Iconify (Outdoor / Nature Icons) -->
+    <script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
+
+    <script src="components/navbar.js"></script>
+</head>
+<body class="bg-orange-500">
+
+    <!-- Floating Nav Bar (same as services.html) -->
+    <header class="bg-orange-600 text-black border-b-4 border-black fixed top-0 left-0 w-full z-50">
+        <div class="container mx-auto flex justify-between items-center px-6 py-4">
+            <h1 class="text-2xl font-bold italic">Orange Power Outdoors</h1>
+            <nav class="space-x-6">
+                <a href="index.html" class="hover:text-orange-200 italic">Home</a>
+                <a href="gallery.html" class="hover:text-orange-200 italic">Gallery</a>
+                <a href="services.html" class="hover:text-orange-200 italic">Services</a>
+                <a href="snowremoval.html" class="hover:text-orange-200 italic">Snow Removal</a>
+                <!-- <a href="contact.html" class="hover:text-orange-200">Contact</a>> -->
+                <a href="contact.html" class="bg-white text-orange-600 px-4 py-2 rounded-md font-semibold hover:bg-orange-100 transition">Get a Quote</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="min-h-[calc(100vh-160px)]">
+
+        <!-- Gallery Header (dark band, same vibe as services header) -->
+        <section class="relative bg-stone-800 py-8">
+            <div class="container mx-auto px-0 text-center py-16">
+                <h1 class="text-4xl md:text-5xl text-white font-bold mb-8 mt-12">Gallery</h1>
+                <p class="text-xl text-white">
+                    A closer look at our work.
+                </p>
+            </div>
+        </section>
+
+        <!-- BORDER -->
+        <hr class="border-2 border-black">
+
+        <!-- MAIN GALLERY SECTION (4 rows with sliders) -->
+        <section class="py-12 bg-orange-500">
+            <div class="w-full px-4 md:px-6 lg:px-8">
+        
+                <p class="text-center font-bold text-stone-900 mb-10">
+                    Explore our vast collection of pictures we take on the job. <br>
+                    Click any photo to enlarge.
+                </p>
+
+                <!-- BORDER -->
+                <hr class="border-2 border-black">
+
+                <!-- Row 1 -->
+                <div class="flex justify-center mb-6 mt-8">
+                    <div class="inline-block px-8 py-2 rounded-full bg-stone-800 text-orange-300 text-xl font-semibold">
+                    Lawn Care & Mowing
+                    </div>
+                </div>
+
+                <div class="mb-12 mt-8 py-10 bg-stone-800">
+                    
+                    <div class="relative w-full">
+                        <button id="row1Prev"
+                            class="absolute left-24 md:left-28 top-1/2 -translate-y-1/2 bg-stone-900/80 hover:bg-stone-900 text-white rounded-full p-2 shadow z-10">
+                            <i data-feather="chevron-left" class="w-5 h-5"></i>
+                        </button>
+
+                        <div id="row1Track"
+                             class="flex gap-4 justify-center w-full overflow-hidden px-10">
+                        </div>
+
+                        <button id="row1Next"
+                            class="absolute right-24 md:right-28 top-1/2 -translate-y-1/2 bg-stone-900/80 hover:bg-stone-900 text-white rounded-full p-2 shadow z-10">
+                            <i data-feather="chevron-right" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- BORDER -->
+                <hr class="border-2 border-black">
+
+                <!-- Row 2 -->
+                <div class="flex justify-center mb-6 mt-8">
+                    <div class="inline-block px-8 py-2 rounded-full bg-stone-800 text-orange-300 text-xl font-semibold">
+                    Tree Work, Sod Installation
+                    </div>
+                </div>
+
+                <div class="mb-12 mt-8 py-10 bg-stone-800">
+                    
+                    <div class="relative w-full">
+                        <button id="row2Prev"
+                            class="absolute left-24 md:left-28 top-1/2 -translate-y-1/2 bg-stone-900/80 hover:bg-stone-900 text-white rounded-full p-2 shadow z-10">
+                            <i data-feather="chevron-left" class="w-5 h-5"></i>
+                        </button>
+
+                        <div id="row2Track"
+                             class="flex gap-4 justify-center w-full overflow-hidden px-10">
+                        </div>
+
+                        <button id="row2Next"
+                            class="absolute right-24 md:right-28 top-1/2 -translate-y-1/2 bg-stone-900/80 hover:bg-stone-900 text-white rounded-full p-2 shadow z-10">
+                            <i data-feather="chevron-right" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- BORDER -->
+                <hr class="border-2 border-black">
+
+                <!-- Row 3 -->
+                <div class="flex justify-center mb-6 mt-8">
+                    <div class="inline-block px-8 py-2 rounded-full bg-stone-800 text-orange-300 text-xl font-semibold">
+                    Fences, Retaining Walls
+                    </div>
+                </div>
+
+                <div class="mb-12 mt-8 py-10 bg-stone-800">
+                    
+                    <div class="relative w-full">
+                        <button id="row3Prev"
+                            class="absolute left-24 md:left-28 top-1/2 -translate-y-1/2 bg-stone-900/80 hover:bg-stone-900 text-white rounded-full p-2 shadow z-10">
+                            <i data-feather="chevron-left" class="w-5 h-5"></i>
+                        </button>
+
+                        <div id="row3Track"
+                             class="flex gap-4 justify-center w-full overflow-hidden px-10">
+                        </div>
+
+                        <button id="row3Next"
+                            class="absolute right-24 md:right-28 top-1/2 -translate-y-1/2 bg-stone-900/80 hover:bg-stone-900 text-white rounded-full p-2 shadow z-10">
+                            <i data-feather="chevron-right" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- BORDER -->
+                <hr class="border-2 border-black">
+
+                <!-- Row 4 -->
+                <div class="flex justify-center mb-6 mt-8">
+                    <div class="inline-block px-8 py-2 rounded-full bg-stone-800 text-orange-300 text-xl font-semibold">
+                    A Mix of Others
+                    </div>
+                </div>
+
+                <div class="mb-2 mt-8 py-10 bg-stone-800">
+                    
+                    <div class="relative w-full">
+                        <button id="row4Prev"
+                            class="absolute left-24 md:left-28 top-1/2 -translate-y-1/2 bg-stone-900/80 hover:bg-stone-900 text-white rounded-full p-2 shadow z-10">
+                            <i data-feather="chevron-left" class="w-5 h-5"></i>
+                        </button>
+
+                        <div id="row4Track"
+                             class="flex gap-4 justify-center w-full overflow-hidden px-10">
+                        </div>
+
+                        <button id="row4Next"
+                            class="absolute right-24 md:right-28 top-1/2 -translate-y-1/2 bg-stone-900/80 hover:bg-stone-900 text-white rounded-full p-2 shadow z-10">
+                            <i data-feather="chevron-right" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- BORDER -->
+        <hr class="border-2 border-black">
+
+        <!-- Call to Action (same style as services footer CTA) -->
+        <section class="py-8 bg-stone-800 text-white text-center">
+            <h2 class="text-3xl font-bold mb-6">Like What You See?</h2>
+            <p class="text-xl text-orange-500 mb-8 max-w-2xl mx-auto">
+                Reach out to us anytime for a free estimate.
+            </p>
+            <a href="contact.html"
+            inline-flex items-center bg-orange-500 text-white px-8 py-2 mb-0 rounded-lg font-semibold hover:bg-orange-600 transition
+               class="inline-flex items-center bg-orange-500 text-white px-8 py-2 mb-0 rounded-lg font-semibold hover:bg-orange-600 transition">
+                Contact Us Now
+            </a>
+            <p class="text-sm pt-8 pb-2">
+                For questions, reach us at orangepowermowing@gmail.com.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- BORDER -->
+    <hr class="border-2 border-black">
+
+    <!-- Footer -->
+    <footer class="bg-stone-800 text-white py-8 text-center">
+        <p>&copy; 2025 Orange Power Outdoors. All rights reserved.</p>
+    </footer>
+
+    <!-- LIGHTBOX / MODAL FOR CLICKED IMAGES -->
+    <div id="lightboxOverlay"
+         class="fixed inset-0 bg-black/80 flex items-center justify-center z-50 hidden">
+        <div class="relative max-w-5xl w-[90%]">
+            <button id="lightboxClose"
+                    class="absolute -top-4 -right-4 bg-stone-900 text-white rounded-full p-2 shadow">
+                <i data-feather="x" class="w-5 h-5"></i>
+            </button>
+            <img id="lightboxImage"
+                 src=""
+                 alt=""
+                 class="w-full h-auto max-h-[80vh] object-contain rounded-lg border border-white/40">
+            <p id="lightboxCaption"
+               class="mt-4 text-center text-stone-100 text-sm"></p>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script>feather.replace();</script>
+
+    <script>
+        // --- IMAGE DATA (reusing the same images as your index gallery) ---
+        // You can rearrange or swap these into whatever grouping you like.
+        const galleryRows = {
+            row1: [
+                { src: 'images/IMG_A.png', alt: '' },
+                { src: 'images/IMG_B.png', alt: '' },
+                { src: 'images/IMG_C.png', alt: '' },
+                { src: 'images/IMG_D.png', alt: '' }
+            ],
+            row2: [
+                { src: 'images/IMG_E.png', alt: '' },
+                { src: 'images/IMG_F.png', alt: '' },
+                { src: 'images/IMG_G.jpg', alt: '' },
+                { src: 'images/IMG_H.jpg', alt: '' }
+            ],
+            row3: [
+                { src: 'images/IMG_I.jpg', alt: '' },
+                { src: 'images/IMG_0633.png', alt: '' },
+                { src: 'images/IMG_J.png', alt: '' },
+                { src: 'images/IMG_7007.png', alt: '' }
+            ],
+            row4: [
+                { src: 'images/IMG_E.png', alt: '' },
+                { src: 'images/IMG_F.png', alt: '' },
+                { src: 'images/IMG_G.jpg', alt: '' },
+                { src: 'images/IMG_H.jpg', alt: '' }
+            ]
+        };
+
+        const visibleCount = 3; // large images like index.html
+
+        // Lightbox elements
+        const lightboxOverlay = document.getElementById('lightboxOverlay');
+        const lightboxImage   = document.getElementById('lightboxImage');
+        const lightboxCaption = document.getElementById('lightboxCaption');
+        const lightboxClose   = document.getElementById('lightboxClose');
+
+        function openLightbox(src, alt) {
+            lightboxImage.src = src;
+            lightboxImage.alt = alt || '';
+            lightboxCaption.textContent = alt || '';
+            lightboxOverlay.classList.remove('hidden');
+        }
+
+        function closeLightbox() {
+            lightboxOverlay.classList.add('hidden');
+            lightboxImage.src = '';
+            lightboxCaption.textContent = '';
+        }
+
+        lightboxClose.addEventListener('click', closeLightbox);
+        lightboxOverlay.addEventListener('click', (e) => {
+            // Close if clicking the dark background, not the image
+            if (e.target === lightboxOverlay) {
+                closeLightbox();
+            }
+        });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeLightbox();
+        });
+
+        // Initialize a single row carousel (adapted from index.html gallery logic)
+        function initRowCarousel(rowId, images) {
+            const track = document.getElementById(rowId + 'Track');
+            const prev  = document.getElementById(rowId + 'Prev');
+            const next  = document.getElementById(rowId + 'Next');
+
+            if (!track || !prev || !next) return;
+
+            let currentIndex = 0;
+            const n = images.length;
+            const half = Math.floor(visibleCount / 2);
+
+            function renderRow() {
+                track.innerHTML = '';
+
+                for (let offset = -half; offset <= half; offset++) {
+                    const idx = (currentIndex + offset + n) % n;
+                    const imgData = images[idx];
+
+                    const slide = document.createElement('div');
+                    slide.className =
+                        'slide w-[18rem] sm:w-[22rem] md:w-[24rem] lg:w-[26rem] ' +
+                        'aspect-[4/3] overflow-hidden rounded-xl shadow-xl flex-shrink-0 ' +
+                        'border border-white/40 bg-stone-900';
+
+                    const img = document.createElement('img');
+                    img.src = imgData.src;
+                    img.alt = imgData.alt;
+                    img.className = 'w-full h-full object-cover cursor-pointer';
+
+                    // click to open lightbox
+                    img.addEventListener('click', () => {
+                        openLightbox(imgData.src, imgData.alt);
+                    });
+
+                    slide.appendChild(img);
+                    track.appendChild(slide);
+                }
+            }
+
+            function preloadImages(callback) {
+                let loaded = 0;
+                if (n === 0) {
+                    if (callback) callback();
+                    return;
+                }
+                images.forEach((imgData) => {
+                    const img = new Image();
+                    img.src = imgData.src;
+                    img.onload = img.onerror = () => {
+                        loaded++;
+                        if (loaded === n && typeof callback === 'function') {
+                            callback();
+                        }
+                    };
+                });
+            }
+
+            prev.addEventListener('click', () => {
+                currentIndex = (currentIndex - 1 + n) % n;
+                renderRow();
+            });
+
+            next.addEventListener('click', () => {
+                currentIndex = (currentIndex + 1) % n;
+                renderRow();
+            });
+
+            preloadImages(renderRow);
+        }
+
+        // Initialize all four rows
+        document.addEventListener('DOMContentLoaded', () => {
+            initRowCarousel('row1', galleryRows.row1);
+            initRowCarousel('row2', galleryRows.row2);
+            initRowCarousel('row3', galleryRows.row3);
+            initRowCarousel('row4', galleryRows.row4);
+        });
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
