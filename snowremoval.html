@@ -34,16 +34,16 @@
     
 
     <!-- Floating Nav Bar -->
-    <header class="bg-orange-400 text-black border-b-4 border-black fixed top-0 left-0 w-full z-50">
+    <header class="bg-blue-500 text-black border-b-4 border-black fixed top-0 left-0 w-full z-50">
     <div class="container mx-auto flex justify-between items-center px-6 py-4">
       <h1 class="text-2xl font-bold italic">Orange Power Outdoors</h1>
       <nav class="space-x-6">
-        <a href="index.html" class="hover:text-orange-200 italic">Home</a>
-        <a href="gallery.html" class="hover:text-orange-200 italic">Gallery</a>
-        <a href="services.html" class="hover:text-orange-200 italic">Services</a>
-        <a href="snowremoval.html" class="hover:text-orange-200 italic">Snow Removal</a>
+        <a href="index.html" class="hover:text-blue-600 italic">Home</a>
+        <a href="gallery.html" class="hover:text-blue-600 italic">Gallery</a>
+        <a href="services.html" class="hover:text-blue-600 italic">Services</a>
+        <a href="snowremoval.html" class="hover:text-blue-600 italic">Snow Removal</a>
         <!-- <a href="contact.html" class="hover:text-orange-200">Contact</a>> -->
-        <a href="contact.html" class="bg-white text-orange-600 px-4 py-2 rounded-md font-semibold hover:bg-orange-100 transition">Get a Quote</a>
+        <a href="contact.html" class="bg-white text-blue-400 px-4 py-2 rounded-md font-semibold hover:bg-blue-100 transition">Get a Quote</a>
       </nav>
     </div>
   </header>
@@ -56,7 +56,7 @@
                 <p class="text-xl text-white">For when winters are rough.</p>
             <!-- Request Quote Button -->
                 <div class="mt-12 text-center">
-                    <a href="contact.html" class="inline-flex items-center bg-orange-500 text-white px-8 py-2 mb-0 rounded-lg font-semibold hover:bg-orange-600 transition">
+                    <a href="contact.html" class="inline-flex items-center bg-blue-400 text-white px-8 py-2 mb-0 rounded-lg font-semibold hover:bg-blue-600 transition">
                         Request a Free Estimate
                         <i data-feather="arrow-right" class="ml-2 w-5 h-5"></i>
                     </a>
@@ -69,26 +69,30 @@
     <hr class="border-2 border-black">
 
         <!-- Services List -->
-        <section class="py-16 bg-orange-400">
-            <div class="container mx-auto px-4">
+        <section class="py-16 bg-blue-500">
+            <div class="container mx-auto px-24">
 
                 <h2 class="text-2xl font-bold text-stone-900 text-center mb-6">Keep your property safe and accessible throughout the winter.</h2>
-                <h2 class="text-l italic text-stone-800 font-bold text-center mb-8">Services listed are available for <span class="text-bold text-stone-200">commercial properties only.</span></h2>
+            
+                <h2 class="text-l italic text-stone-800 font-bold text-center mb-16">Services listed are available for <span class="text-bold text-stone-200">commercial properties only.</span></h2>
+                
+                <!--
                 <div class="mx-auto bg-stone-900 h-1 w-48 mb-16"></div>
+                -->
 
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-4">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-2 mb-4">
                     <!-- Service 1 -->
                     <div class="flex flex-col md:flex-row gap-6">
                         <div class="flex-shrink-0">
                             <div class="bg-stone-900 w-16 h-16 rounded-full flex items-center justify-center">
-                                <span class="iconify text-orange-600 w-9 h-9" data-icon="la:snowplow"></span>
+                                <span class="iconify text-blue-600 w-9 h-9" data-icon="la:snowplow"></span>
                             </div>
                         </div>
                         <div>
                             <h3 class="text-xl font-semibold mb-2">Snow Removal</h3>
                             <p class="text-stone-900">Full commercial snow removal - <br>lots, driveways, sidewalks.</p>
                             <div class="mt-4">
-                                <span class="inline-block bg-stone-900 text-white px-3 py-1 rounded-full text-sm font-semibold">Starting at $35</span>
+                                <span class="inline-block bg-stone-900 text-white px-3 py-1 rounded-full text-sm font-semibold">Custom Pricing</span>
                             </div>
                         </div>
                     </div>
@@ -97,12 +101,12 @@
                     <div class="flex flex-col md:flex-row gap-6">
                         <div class="flex-shrink-0">
                             <div class="bg-stone-900 w-16 h-16 rounded-full flex items-center justify-center">
-                                <span class="iconify text-orange-600 w-9 h-9" data-icon="ix:maintenance"></span>
+                                <span class="iconify text-blue-600 w-9 h-9" data-icon="ix:maintenance"></span>
                             </div>
                         </div>
                         <div>
                             <h3 class="text-xl font-semibold mb-2">De-Icing Applications</h3>
-                            <p class="text-stone-900">Full de-icing of frozen rain, black ice, hard snow.</p>
+                            <p class="text-stone-900">Full de-icing of: <br>frozen rain, black ice, hard snow.</p>
                             <div class="mt-4">
                                 <span class="inline-block bg-stone-900 text-white px-3 py-1 rounded-full text-sm font-semibold">Custom Pricing</span>
                             </div>
@@ -113,14 +117,15 @@
                     <div class="flex flex-col md:flex-row gap-6">
                         <div class="flex-shrink-0">
                             <div class="bg-stone-900 w-16 h-16 rounded-full flex items-center justify-center">
-                                <span class="iconify text-orange-600 w-8 h-8" data-icon="mdi:seed"></span>
+                                <span class="iconify text-blue-600 w-8 h-8" data-icon="mdi:seed"></span>
                             </div>
                         </div>
                         <div>
-                            <h3 class="text-xl font-semibold mb-2">Seasonal Cleanups</h3>
-                            <p class="text-stone-900">Spring and fall cleanups - leaf removal, debris cleanup, pruning.</p>
+                            <h3 class="text-xl font-semibold mb-2">Pre/Post Storm</h3>
+                            <p class="text-stone-900">Pre-storm and Post-storm scheduling.<br>Like the weather never came.</p>
                             <div class="mt-4">
-                                <span class="inline-block bg-stone-900 text-white px-3 py-1 rounded-full text-sm font-semibold">Starting at $100</span>
+                                
+                                <span class="inline-block bg-stone-900 text-white px-3 py-1 rounded-full text-sm font-semibold">Custom Pricing</span>
                             </div>
                         </div>
                     </div>
@@ -141,12 +146,15 @@
             <div class="container mx-auto px-4">
                 <h2 class="text-3xl font-bold text-center text-white mb-12">Want to See the Work we Do?</h2>
                     <div class="mt-12 mb-8 text-center">
-                        <a href="gallery.html" class="inline-flex items-center bg-orange-500 text-white px-8 py-2 mb-0 rounded-lg font-semibold hover:bg-orange-600 transition">
+                        <a href="gallery.html" class="inline-flex items-center bg-blue-400 text-white px-8 py-2 mb-0 rounded-lg font-semibold hover:bg-blue-600 transition">
                             Click Here to See Pictures
                         </a>
                     </div>
                     
-                    <p class="text-center mt-8 text-gray-600">Don't see the service you need? Contact us for specific requests.</p>
+                    <p class="text-center mt-8 text-gray-600">Don't see the service you need?
+                        <a href="contact.html" class="text-inherit no-underline hover:text-orange-500">Contact us</a>
+                        for specific requests.
+                    </p>
                 
             </div>
         </section>
