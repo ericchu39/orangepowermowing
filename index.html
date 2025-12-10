@@ -22,24 +22,87 @@
     }
   </script>
   <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Orange Power Outdoors",
+      "url": "https://orangepoweroutdoors.com",
+      "logo": "https://orangepoweroutdoors.com/images/logo.jpg",
+      "image": "https://orangepoweroutdoors.com/images/logo.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "109 W 11th Ave",
+        "addressLocality": "Stillwater",
+        "addressRegion": "OK",
+        "postalCode": "74074",
+        "addressCountry": "US"
+      },
+      "telephone": "+1-405-714-5843",
+      "priceRange": "$$",
+      "sameAs": [
+        "https://www.google.com/maps/place/Orange+Power+Mowing+%26+Landscaping/"
+      ]
+    }
+    </script>    
 </head>
 
 <body class="bg-gray-50 font-sans">
 
-  <!-- Floating Navigation Bar -->
+  
+  <!-- Floating Navigation Bar with Mobile Dropdown -->
   <header class="bg-orange-500 text-black border-b-4 border-black fixed top-0 left-0 w-full z-50">
-    <div class="container mx-auto flex justify-between items-center px-6 py-4">
-      <h1 class="text-2xl font-bold italic">Orange Power Outdoors</h1>
-      <nav class="space-x-6">
-        <a href="index.html" class="hover:text-orange-200 italic">Home</a>
-        <a href="gallery.html" class="hover:text-orange-200 italic">Gallery</a>
-        <a href="services.html" class="hover:text-orange-200 italic">Services</a>
-        <a href="snowremoval.html" class="hover:text-orange-200 italic">Snow Removal</a>
-        <!-- <a href="contact.html" class="hover:text-orange-200">Contact</a>> -->
-        <a href="contact.html" class="bg-white text-orange-600 px-4 py-2 rounded-md font-semibold hover:bg-[#FEE8D6] transition">Get a Quote</a>
-      </nav>
-    </div>
+  <div class="max-w-8xl mx-auto flex items-center justify-between px-4 md:px-6 py-3 md:py-4">
+
+    <!-- Logo / Brand -->
+    <h1 class="text-xl md:text-2xl font-bold italic">
+      Orange Power Outdoors
+    </h1>
+
+    <!-- Desktop nav -->
+    <nav class="hidden md:flex space-x-6 items-center">
+      <a href="index.html" class="hover:text-orange-200 italic">Home</a>
+      <a href="gallery.html" class="hover:text-orange-200 italic">Gallery</a>
+      <a href="services.html" class="hover:text-orange-200 italic">Services</a>
+      <a href="snowremoval.html" class="hover:text-orange-200 italic">Snow Removal</a>
+      <a href="contact.html"
+         class="bg-white text-orange-600 px-4 py-2 rounded-md font-semibold hover:bg-orange-100 transition">
+        Get a Quote
+      </a>
+    </nav>
+
+    <!-- Mobile hamburger button -->
+    <button id="mobile-menu-button"
+            class="md:hidden inline-flex items-center justify-center p-2 rounded-md border border-black bg-orange-500 text-black hover:bg-orange-600 focus:outline-none"
+            aria-label="Open main menu">
+      <!-- Simple hamburger icon -->
+      <span class="block w-8 h-[2px] bg-black mb-0"></span>
+      <span class="block w-8 h-[2px] bg-black mb-0"></span>
+      <span class="block w-8 h-[2px] bg-black mb-0"></span>
+      <span class="block w-8 h-[2px] bg-black mb-0"></span>
+      <span class="block w-6 h-[2px] bg-black mb-0"></span>
+    </button>
+  </div>
+
+  <!-- Mobile dropdown menu -->
+  <div id="mobile-menu"
+    class="md:hidden hidden absolute right-4 top-[60px] bg-orange-500 border-2 border-black rounded-lg shadow-lg w-auto z-50">
+    <nav class="flex flex-col px-4 py-3 space-y-2 min-w-[160px]">
+      <a href="index.html" class="italic text-center hover:text-orange-200">Home</a>
+      <a href="gallery.html" class="italic text-center hover:text-orange-200">Gallery</a>
+      <a href="services.html" class="italic text-center hover:text-orange-200">Services</a>
+      <a href="snowremoval.html" class="italic text-center hover:text-orange-200">Snow Removal</a>
+
+      <a href="contact.html"
+        class="mt-2 bg-white text-orange-600 px-4 py-2 rounded-md font-semibold text-center hover:bg-orange-100 transition">
+        Get a Quote
+      </a>
+    </nav>
+  </div>
+
   </header>
+
+
 
   <main class="pt-10">
     <!-- Hero Section -->
@@ -441,6 +504,18 @@ function preloadGalleryImages(callback) {
   renderThumbs();
 });
 
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const btn = document.getElementById("mobile-menu-button");
+    const menu = document.getElementById("mobile-menu");
+
+    if (btn && menu) {
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    }
+  });
 </script>
 
 </body>
